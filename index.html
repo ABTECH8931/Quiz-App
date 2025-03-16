@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU POLL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="start-screen">
+            <button id="start-btn">Start Test</button>
+        </div>
+
+        <div id="quiz-screen" style="display: none;">
+            <div class="question-indicator">
+                <span id="current-question">1</span> / <span id="total-questions">0</span>
+            </div>
+            <div class="timer">Time:<span id="time-left">15</span>s</div>
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="end-screen" style="display: none;">
+            <h2>Test Finished!</h2>
+            <p>Your results will be displayed.</p>
+            <button id="end-btn">End Test</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
