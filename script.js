@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentQuestion = 0;
     let timeLeft = 15;
     let timerInterval;
+    let userName = ""; // Variable to store the user's name
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInterval(timerInterval);
                 nextQuestion();
             }
-        }, 2000); // Adjust timer speed here
+        }, 2000);
     }
 
     function selectOption(optionDiv, questionIndex) {
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         endScreen.style.display = 'block';
 
         let score = 0;
-        let resultsHTML = '<h2>Test Finished!</h2>';
+        let resultsHTML = `<h2>Test Finished, ${userName}!</h2>`; // Include the user's name
 
         for (let i = 0; i < questions.length; i++) {
             const question = questions[i];
@@ -148,21 +149,26 @@ document.addEventListener('DOMContentLoaded', function() {
         endScreen.innerHTML = resultsHTML;
 
         document.getElementById('end-btn').addEventListener('click', () => {
-            // Display thank you message
-            endScreen.innerHTML = '<h2>Thank You!</h2><p>Thank you for taking the test.</p><button id="start-again-btn">Start Again</button>';
+            endScreen.innerHTML = `<h2>Thank You, ${userName}!</h2><p>Thank you for taking the test.</p><button id="start-again-btn">Start Again</button>`; // Include the user's name
 
             document.getElementById('start-again-btn').addEventListener('click', () => {
-                // Redirect back to start screen
                 endScreen.style.display = 'none';
-                document.getElementsByClassName('start-screen')[0].style.display = 'flex'; // Make sure the start screen is visible
+                document.getElementsByClassName('start-screen')[0].style.display = 'flex';
                 currentQuestion = 0;
-                selectedAnswers = []; // Reset selected answers
-                loadQuestions(); // Load questions again
+                selectedAnswers = [];
+                loadQuestions();
             });
         });
     }
 
-    document.getElementById('start-btn').addEventListener('click', loadQuestions);
+    document.getElementById('start-btn').addEventListener('click', () => {
+        userName = document.getElementById('name-input').value; // Get the user's name
+        if (userName.trim() === "") {
+            alert("Please enter your name.");
+            return;
+        }
+        loadQuestions();
+    });
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
     document.getElementById('prev-btn').addEventListener('click', prevQuestion);
 });
