@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "What color is the 'start' button in Scratch?",
+      "options": ["Red", "Green", "Blue", "Yellow"],
+      "answer": "Green"
+    },
+    {
+      "question": "What is a 'Sprite' in Scratch?",
+      "options": ["A background picture", "A coding block", "A character or object", "A sound"],
+      "answer": "A character or object"
+    },
+    {
+      "question": "Which block makes a Sprite move forward?",
+      "options": ["turn right (15) degrees", "move (10) steps", "say 'Hello!'", "change color effect by (25)"],
+      "answer": "move (10) steps"
+    },
+    {
+      "question": "What does the 'say' block make a Sprite do?",
+      "options": ["Move", "Change color", "Speak", "Disappear"],
+      "answer": "Speak"
+    },
+    {
+      "question": "Which block makes a Sprite turn?",
+      "options": ["move (10) steps", "turn right (15) degrees", "say 'Hello!'", "change y by (10)"],
+      "answer": "turn right (15) degrees"
+    },
+    {
+      "question": "What does the 'repeat' block do?",
+      "options": ["Stops the program", "Makes something happen again and again", "Changes the background", "Plays a sound"],
+      "answer": "Makes something happen again and again"
+    },
+    {
+      "question": "What does the 'stop' sign button do?",
+      "options": ["Starts the program", "Stops the program", "Saves the project", "Changes the Sprite"],
+      "answer": "Stops the program"
+    },
+    {
+      "question": "Which block changes the Sprite's color?",
+      "options": ["move (10) steps", "say 'Hello!'", "change color effect by (25)", "go to x: (0) y: (0)"],
+      "answer": "change color effect by (25)"
+    },
+    {
+      "question": "What does the 'hide' block do to a Sprite?",
+      "options": ["Makes it bigger", "Makes it disappear", "Makes it move faster", "Changes its sound"],
+      "answer": "Makes it disappear"
+    },
+    {
+      "question": "What does the 'show' block do to a Sprite?",
+      "options": ["Makes it smaller", "Makes it visible", "Makes it turn", "Changes its shape"],
+      "answer": "Makes it visible"
+    }
+  ]
+}
