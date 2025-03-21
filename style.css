@@ -1,209 +1,125 @@
+/* General Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.quiz-container {
-    background: linear-gradient(135deg, #e0e0e0, #f8f8f8);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
-}
-
-.start-screen {
-    display: flex;
-    flex-direction: column; /* Changed to column for better input placement */
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#name-input {
-    padding: 12px 18px;
-    margin-bottom: 15px; /* Added margin for spacing */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 80%; /* Adjust width as needed */
-    max-width: 300px; /* Optional: set a max width */
-    box-sizing: border-box; /* Important for padding to be included in width */
-    transition: border-color 0.3s ease;
-}
-
-#name-input:focus {
-    border-color: #007bff;
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: add focus shadow */
-}
-
-.start-screen button {
-    background: linear-gradient(to right, #007bff, #0056b3);
-    color: #fff;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
-}
-
-.start-screen button:hover {
-    box-shadow: 0 0 30px rgba(0, 123, 255, 0.9);
-}
-
-.question-indicator {
-    font-size: 16px;
-    margin-bottom: 10px;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
     color: #333;
-}
-
-.timer {
-    background: linear-gradient(to right, #64b5f6, #1976d2);
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 15px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
-}
-
-.timer.low-time {
-    background: linear-gradient(to right, #ffb74d, #f57c00);
-    color: #fff;
-    animation: pulse 1s infinite ease-in-out;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.question {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.options {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.option {
-    background: linear-gradient(to bottom, #f0f0f0, #e8e8e8);
-    border: 1px solid #ccc;
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Button Styling */
+button {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(200, 200, 200, 0.6);
     border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.option:hover,
-.option.selected {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-}
-
-.controls {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.controls button {
-    background: linear-gradient(to right, #64b5f6, #1976d2);
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.controls button:hover {
-    background: linear-gradient(to right, #42a5f5, #1565c0);
-    transform: translateY(-2px);
-}
-
-#end-screen h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
     color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-#end-screen p {
     font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-#end-screen p span {
-    font-weight: 600;
-}
-
-#end-screen button,
-#start-again-btn {
-    background: linear-gradient(to right, #64b5f6, #1976d2);
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
+    padding: 10px 16px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#end-screen button:hover,
-#start-again-btn:hover {
-    background: linear-gradient(to right, #42a5f5, #1565c0);
-    transform: translateY(-2px);
+button:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-    .quiz-container {
-        padding: 15px;
-    }
+/* Input Fields and Dropdown Menu */
+input, select {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s ease-in-out;
+}
 
-    .question {
-        font-size: 18px;
-    }
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #666;
+}
 
-    .option {
-        padding: 10px;
-    }
+/* Question Styling */
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
-    .controls button {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
+/* Options Styling */
+.option {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
 
-    .timer {
-        padding: 6px 10px;
-        font-size: 14px;
-    }
+.option:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
 
-    #end-screen button,
-    #start-again-btn {
-        padding: 10px 16px;
-        font-size: 14px;
-    }
+.option.selected {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(100, 100, 100, 0.7);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Timer Styling */
+#time-left {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Results Section */
+#results {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
