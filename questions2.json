@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "What does the 'repeat' block do?",
+      "options": ["Makes something happen once", "Makes something happen many times", "Stops the program", "Changes the color"],
+      "answer": "Makes something happen many times"
+    },
+    {
+      "question": "What does the 'if...then' block do?",
+      "options": ["Plays a sound", "Makes a decision", "Moves the sprite", "Changes the background"],
+      "answer": "Makes a decision"
+    },
+    {
+      "question": "Which block checks if two things are touching?",
+      "options": ["move steps", "turn degrees", "touching?", "change color"],
+      "answer": "touching?"
+    },
+    {
+      "question": "What can a 'variable' do?",
+      "options": ["Play a sound", "Store a number or word", "Change the costume", "Move randomly"],
+      "answer": "Store a number or word"
+    },
+    {
+      "question": "What does 'broadcast' do?",
+      "options": ["Changes size", "Sends a message", "Plays a sound", "Moves the Sprite"],
+      "answer": "Sends a message"
+    },
+    {
+      "question": "Which block picks a random number?",
+      "options": ["move steps", "pick random", "change color", "turn degrees"],
+      "answer": "pick random"
+    },
+    {
+      "question": "What does 'forever' do?",
+      "options": ["Runs one time", "Runs until stopped", "Stops the program", "Saves the project"],
+      "answer": "Runs until stopped"
+    },
+    {
+      "question": "What does the green flag do?",
+      "options": ["Stops the code", "Starts the code", "Saves the code", "Deletes the code"],
+      "answer": "Starts the code"
+    },
+    {
+      "question": "What is a 'costume'?",
+      "options": ["A sound", "A background", "A sprite's look", "A coding block"],
+      "answer": "A sprite's look"
+    },
+    {
+      "question": "What does the 'change color effect' block do?",
+      "options": ["Moves the sprite", "Changes the sprite's color", "Plays a sound", "Changes the background"],
+      "answer": "Changes the sprite's color"
+    }
+  ]
+}
