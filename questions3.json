@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Which CSS property changes the color of text?",
+      "options": ["size", "color", "style", "font"],
+      "answer": "color"
+    },
+    {
+      "question": "Which CSS property changes the background color?",
+      "options": ["text-color", "bg-color", "background-color", "font-color"],
+      "answer": "background-color"
+    },
+    {
+      "question": "Which CSS property changes the size of text?",
+      "options": ["text-size", "font-size", "word-size", "letter-size"],
+      "answer": "font-size"
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "question": "Which CSS property aligns text horizontally?",
+      "options": ["font-align", "text-align", "line-align", "word-align"],
+      "answer": "text-align"
+    },
+    {
+      "question": "Which HTML tag makes a heading?",
+      "options": ["<p>", "<h1>", "<div>", "<span>"],
+      "answer": "<h1>"
+    },
+    {
+      "question": "Which HTML tag makes a paragraph?",
+      "options": ["<h1>", "<li>", "<p>", "<a>"],
+      "answer": "<p>"
+    },
+    {
+      "question": "Which HTML tag makes a link?",
+      "options": ["<p>", "<h1>", "<a>", "<div>"],
+      "answer": "<a>"
+    },
+    {
+      "question": "Which HTML tag shows an image?",
+      "options": ["<p>", "<a>", "<img>", "<div>"],
+      "answer": "<img>"
+    },
+    {
+      "question": "Which HTML tag is used to create an input field in a form?",
+      "options": ["<form>", "<input>", "<label>", "<button>"],
+      "answer": "<input>"
+    }
+  ]
+}
