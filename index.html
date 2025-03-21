@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <div class="start-screen">
-            <h2 style="color:#1976d2;">Welcome to the Quiz!</h2>
-            <input type="text" id="name-input" placeholder="Enter your name">
+    <div class="container">
+        <div id="start-screen">
+            <h1>Welcome to the Test</h1>
+            <input type="text" id="user-name" placeholder="Enter your name"><br><br>
+            <select id="quiz-selector">
+                <option value="">Select a Test</option>
+                <option value="questions1.json">Test 1</option>
+                <option value="questions2.json">Test 2</option>
+                <option value="questions3.json">Test 3</option>
+            </select><br><br>
             <button id="start-btn">Start Test</button>
         </div>
 
-        <div id="quiz-screen" style="display: none;">
-            <div class="question-indicator">
-                <span id="current-question">1</span> / <span id="total-questions">0</span>
-            </div>
-            <div class="timer">Time:<span id="time-left">15</span>s</div>
-            <div class="question" id="question"></div>
-            <div class="options" id="options"></div>
-            <div class="controls">
-                <button id="prev-btn" disabled>Previous</button>
-                <button id="next-btn">Next</button>
-            </div>
+        <div id="quiz-screen" class="hidden">
+            <h1 id="question"></h1>
+            <div id="options"></div>
+            <p>Time Left: <span id="time-left">15</span>s</p>
+            <button id="next-btn" disabled>Next Question</button>
         </div>
 
-        <div id="end-screen" style="display: none;">
-            <h2>Test Finished!</h2>
-            <p>Your results will be displayed.</p>
-            <button id="end-btn">End Test</button>
+        <div id="end-screen" class="hidden">
+            <h1>Test Results</h1>
+            <div id="results"></div>
+            <button id="restart-btn">Restart</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
