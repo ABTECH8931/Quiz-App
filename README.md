@@ -11,4 +11,4 @@ This repository showcases a JavaScript quiz designed to assess foundational Java
 This project highlights my ability to create functional and engaging web applications using JavaScript.
 
 
-https://67d6a1d2dbb35e421f51738f--idyllic-axolotl-9f4eab.netlify.app/
+https://test-app-9e8r.onrender.com
